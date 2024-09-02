@@ -25,5 +25,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}         
           script: |
-            cd /root/app/cube_api1
-            whoami
+            cd /home/cloud_user/cube_api1
+            git pull origin master
