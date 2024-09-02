@@ -20,6 +20,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            echo "Deploying to server..."
-            # Add your deployment commands here
-            whoami
+            cd /root/app/cube_api1
+            git pull origin main
