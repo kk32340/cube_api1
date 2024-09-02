@@ -25,5 +25,5 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /app/nodejs/cube_api1/
+          cd /app/nodejs/cube_api1/cube_api1
           git pull origin main          
